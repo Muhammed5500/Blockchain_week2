@@ -11,7 +11,7 @@ window.ROZET_CONFIG = {
   EXPLORER_URL: "https://sepolia.etherscan.io",
 
   // Sitenin yayınlandığı adres. Galeri bunun QR kodunu gösterir.
-  MINT_URL: "",
+  MINT_URL: "https://blockchainweek2.vercel.app/",
 
   // Sepolia test USDC (Circle). Kaynak: developers.circle.com/stablecoins/usdc-contract-addresses
   USDC_ADDRESS: "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238",
