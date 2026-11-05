@@ -5,11 +5,9 @@
 
   if (!configured) {
     notConfigured($("app"));
-    $("contractLink").hidden = true;
     return;
   }
 
-  $("contractLink").href = addrUrl(C.CONTRACT_ADDRESS) + "#code";
   const reader = new ethers.Contract(C.CONTRACT_ADDRESS, ABI, new ethers.JsonRpcProvider(C.RPC_URL, C.CHAIN_ID, { staticNetwork: true }));
   const chainHex = "0x" + C.CHAIN_ID.toString(16);
   const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
