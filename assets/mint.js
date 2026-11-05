@@ -193,14 +193,6 @@
     );
   }
 
-  function watchUsdc() {
-    watch(
-      { type: "ERC20", options: { address: C.USDC_ADDRESS, symbol: "USDC", decimals: 6 } },
-      "USDC cüzdanına eklendi. Token sekmesinde görebilirsin.",
-      `Cüzdanın bunu otomatik ekleyemedi. "Import token" ile elle ekle:<br><span class="mono">${C.USDC_ADDRESS}</span>`
-    );
-  }
-
   function explain(e) {
     const err = e && (e.error || e);
     const text = String((err && (err.shortMessage || err.message)) || "");
@@ -219,7 +211,6 @@
   $("switchBtn").onclick = switchNetwork;
   $("mintBtn").onclick = mint;
   $("watchNftBtn").onclick = watchNft;
-  $("watchUsdcBtn").onclick = watchUsdc;
 
   // Daha önce bu sayfada bir cüzdan seçilip bağlandıysa sormadan devam et.
   window.RozetWallets.remembered().then((p) => {
