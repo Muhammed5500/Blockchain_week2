@@ -6,6 +6,6 @@ ODTÜ Blockchain Topluluğu, Blockchain 101 Session 02 (Wallets & Assets) katıl
 - `galeri.html`: projeksiyon için canlı galeri
 - `config.js`: kontrat adresi ve ağ ayarları
 
-Kontrat (Sepolia): [0x22D2807aa0F76B78E2655F178c5bb3547013843F](https://sepolia.etherscan.io/address/0x22D2807aa0F76B78E2655F178c5bb3547013843F)
+Kontrat (Sepolia): [0x6b88744CbfbB6b3E4837A8b741b3A416D104440D](https://sepolia.etherscan.io/address/0x6b88744CbfbB6b3E4837A8b741b3A416D104440D)
 
 Statik bir site; derleme adımı yok. GitHub Pages ile yayınlanabilir (Settings → Pages → main / root).

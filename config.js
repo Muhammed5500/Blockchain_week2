@@ -1,7 +1,7 @@
 // Deploy'dan sonra burayı doldur. Ayrıntılar: README.md
 window.ROZET_CONFIG = {
   // Remix'te deploy ettiğin kontratın adresi (0x...). Boşken sayfalar "Kontrat henüz ayarlanmadı" der.
-  CONTRACT_ADDRESS: "0x22D2807aa0F76B78E2655F178c5bb3547013843F",
+  CONTRACT_ADDRESS: "0x6b88744CbfbB6b3E4837A8b741b3A416D104440D",
 
   // Sepolia
   CHAIN_ID: 11155111,
