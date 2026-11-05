@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rozet Galerisi</title>
+<meta name="description" content="Blockchain 101 rozetleri, mintlendikçe canlı olarak.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body style="background:#1C1B22">
+<main class="gallery">
+  <section>
+    <p class="eyebrow" lang="en">METU Blockchain Club · Blockchain 101 · Hafta 2</p>
+    <h1>Rozetler zincire yazılıyor</h1>
+    <div id="body">
+      <p class="counter" style="margin-top:28px"><span id="count">0</span><small>rozet</small></p>
+      <div class="grid" id="grid"></div>
+      <p class="empty" id="empty">İlk rozeti kim mintleyecek?</p>
+    </div>
+  </section>
+  <aside class="side">
+    <div class="qr" id="qr">Mint adresi config.js'te ayarlanınca QR burada görünecek.</div>
+    <p class="url" id="url"></p>
+    <p class="status" id="status">Bağlanıyor…</p>
+  </aside>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="config.js"></script>
+<script src="assets/shared.js"></script>
+<script src="assets/galeri.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blockchain 101 Rozet</title>
+<meta name="description" content="METU Blockchain Club · Blockchain 101 katılım rozetini Sepolia test ağında mintle.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<main class="page">
+  <div class="top">
+    <span class="eyebrow" lang="en">METU Blockchain Club</span>
+    <span class="chip" id="acct" hidden></span>
+  </div>
+
+  <div class="hero">
+    <h1>Blockchain 101 Rozeti</h1>
+    <p>Hafta 2 katılım rozetin. Ücretsiz, sadece Sepolia test ağında. Dönem sonu sertifikası bu rozetlere bakılarak verilecek.</p>
+  </div>
+
+  <div id="app">
+    <section class="card" id="nftCard">
+      <img class="badge" id="preview" alt="Rozet önizlemesi">
+      <div class="stats">
+        <span id="state"><span class="dot"></span>Yükleniyor…</span>
+        <span>Basılan: <b id="count">–</b></span>
+      </div>
+    </section>
+
+    <section class="card" id="connectBox">
+      <button class="btn" id="connectBtn">Cüzdanı bağla</button>
+      <p class="hint">Site sadece adresini görür. 12 kelimeni ya da anahtarını asla görmez.</p>
+    </section>
+
+    <section class="card" id="networkBox" hidden>
+      <p class="msg err">Cüzdanın yanlış ağda. Bu rozet <b>Sepolia</b> test ağında.</p>
+      <button class="btn" id="switchBtn">Sepolia'ya geç</button>
+    </section>
+
+    <section class="card" id="mintBox" hidden>
+      <button class="btn accent" id="mintBtn">Mint</button>
+      <p class="hint">Onaylamadan önce MetaMask ekranını oku: hangi kontrat, kaç ETH (0), ne kadar gas.</p>
+    </section>
+
+    <section class="card" id="pendingBox" hidden>
+      <p class="msg info"><span class="spinner" style="border-color:rgba(74,70,82,.25);border-top-color:#4A4652"></span>İşlem gönderildi, bloğa yazılmasını bekliyoruz…</p>
+      <a class="mono" id="pendingLink" target="_blank" rel="noopener"></a>
+    </section>
+
+    <section class="card success" id="doneBox" hidden>
+      <h2 id="doneTitle">Rozetin hazır</h2>
+      <p id="doneText"></p>
+      <div class="btns">
+        <a class="btn ghost" id="txLink" target="_blank" rel="noopener">İşlemi Etherscan'de gör</a>
+        <button class="btn" id="watchNftBtn">Rozeti MetaMask'a ekle</button>
+        <button class="btn ghost" id="watchUsdcBtn">USDC'yi cüzdana ekle</button>
+      </div>
+      <p class="msg info" id="watchMsg" hidden></p>
+    </section>
+
+    <p class="msg err" id="err" hidden></p>
+  </div>
+
+  <footer>
+    Sadece test ağı. Gerçek para yok. Kimse senden 12 kelimeni istemez.<br>
+    <a id="contractLink" target="_blank" rel="noopener">Kontratın kodu Etherscan'de</a>
+  </footer>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
+<script src="config.js"></script>
+<script src="assets/shared.js"></script>
+<script src="assets/wallets.js"></script>
+<script src="assets/mint.js"></script>
+</body>
+</html>
